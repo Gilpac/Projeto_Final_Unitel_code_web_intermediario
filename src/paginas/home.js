@@ -9,7 +9,7 @@ class Home extends React.Component{
             </div>
             <div className="navbar">
                 <div className="max-width">
-                    < div className="logo"><a href="#">Port<span>fólio</span></a></div>
+                    < div className="logo"><a href="#">Contra<span>te-me</span></a></div>
             <ul className="menu">
               <li><a href="#inicio">Inicio</a></li>
               <li><a href="#sobre">Sobre</a></li>
@@ -29,7 +29,7 @@ class Home extends React.Component{
               <div className="text-1">Olá, seja bem-vindo ao</div>
               <div className="text-2">Recruta-me</div>
               <div className="text-3">Temos <span class="typing"></span></div>
-              <a href="#contactos">Contrata-me</a>
+              
           </div>
       </div>
   </section>
@@ -39,18 +39,18 @@ class Home extends React.Component{
           <h2 className="title">Sobre</h2>
           <div className="about-content">
               <div className="column left">
-                  <img src="imagens/sobre.png" alt=""/>
+                  <img src="../../assets/imagens/sobre.jpg" alt=""/>
               </div>
               <div className="column right">
-                  <div className=""><span class=""></span></div>
-                  <p>Gilson Sebastião, mais conhecido por Gilpac. Programador Web à 7 meses, estudante e freelancer.
-                    Com a formação que tive pela Unitel e a BUKA, tive a oportunidade de ver a programação de uma 
-                    forma muito diferente, um mundo cheio de possibilidades. 
-                    Hoje, com a formação que tive, consigo dar soluções a problemas da sociedade usando a 
-                    programação, e não consigo me imaginar 
-                    trabalhando num outro ramo onde eu não seja desafiado a 
-                    ultrapassar meus limites e me reinventar a cada dia.</p>
-                  <a href="#">Download CV</a>
+                  <p>Existimos para que tenham funcionários de excelência em vossa Companinha.
+                  Sorte não, pois isso não existe. Existe muito trabalho, força, foco, fé e muita 
+                  competência. Todos que pronunciam: "Seja feita a sua vontade, assim na Terra 
+                  como no Céu" não podem acreditar em sorte (coisa do acaso). 
+                  A competência é uma maneira de demonstrar confiança e responsabilidade a uma equipe de trabalho.
+                  Aqui no Contate-me, temos funcionários que podem e irão dar um input a sua companhia.
+                  Deia apenas uma oportunidade a estes.
+                  </p>
+                  
               </div>
           </div>
       </div>

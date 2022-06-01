@@ -188,7 +188,6 @@ section .title::after{
 
 /*  sessão sobre  */
 .about{
-    
     background-color: #222;
 }
 .about .title::after{
@@ -214,6 +213,7 @@ section .title::after{
     text-align: justify;
     color: #fff;
     font-size: 20px;
+    margin-top: -70px;
 }
 .about .about-content .right a{
     display: inline-block;
@@ -232,10 +232,12 @@ section .title::after{
     background: none;
 }
 .about .about-content .left img{
-    width: 250px;
+    width: 100%;
     height: 100%;
+
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 10px;
+    margin-left: -80px;
 }
 /*  sessão serviços */
 .services, .teams{
@@ -642,3 +644,5 @@ footer span a:hover{
         font-size: 27px;
     }
 }
+
+
