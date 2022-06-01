@@ -64,9 +64,10 @@ html{
 /*inicio  */
 .home{
     display: flex;
-    background: url(../imagens/109.png) no-repeat;
-    background-size: cover;
-    height: 100vh;
+    background: url(../../assets/imagens/109.png) no-repeat;
+    background-size: 500px;
+    background-position: right;
+    height: 10vh;
     color: #fff;
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
@@ -187,10 +188,11 @@ section .title::after{
 
 /*  sessão sobre  */
 .about{
+    
     background-color: #222;
 }
 .about .title::after{
-    content: "Quem Eu sou.";
+    content: "Quem somos.";
 }
 .about .about-content .left{
     width: 45%;
