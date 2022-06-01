@@ -4,20 +4,20 @@ class Home extends React.Component{
     render(){
         return(
         <div>
-            <div className="scroll-up-btn">
+            <div class="scroll-up-btn">
                 <ion-icon name="chevron-up-outline"></ion-icon>
             </div>
-            <div className="navbar">
-                <div className="max-width">
-                    < div className="logo"><a href="#">Contra<span>te-me</span></a></div>
-            <ul className="menu">
+            <div class="navbar">
+                <div class="max-width">
+                    < div class="logo"><a href="#">Contra<span>te-me</span></a></div>
+            <ul class="menu">
               <li><a href="#inicio">Inicio</a></li>
               <li><a href="#sobre">Sobre</a></li>
               <li><a href="#servicos">Serviços</a></li>
               <li><a href="#habilidade">Especialidade</a></li>
               <li><a href="#contactos">Contato</a></li>
             </ul>
-            <div className="menu-btn">
+            <div class="menu-btn">
               <ion-icon name="menu-outline"></ion-icon>
             </div>
             </div>
@@ -56,38 +56,38 @@ class Home extends React.Component{
       </div>
   </section>
 
-  <section className="teams" id="servicos">
-      <div className="max-width">
-          <h2 className="title">Meus Serviços</h2>
-         <div className="carousel owl-carousel ">
-             <div className="card">
-                 <div className="box">
-                     <img src="imagens/wp.png" alt="WordPress"/>
+  <section class="teams" id="servicos">
+      <div class="max-width">
+          <h2 class="title">Funcionário Competente só encontras aqui</h2>
+         <div class="carousel owl-carousel ">
+             <div class="card">
+                 <div class="box">
+                     <img src="../../assets/imagens/sobre.jpg" alt="WordPress"/>
                      <div className="text">WordPress</div>
                  </div>
              </div>
-             <div className="card">
-              <div className="box">
+             <div class="card">
+              <div class="box">
                   <img src="imagens/css3.png" alt="Css"/>
-                  <div className="text">css</div>
+                  <div class="text">css</div>
               </div>
           </div>
-          <div className="card">
-              <div className="box">
+          <div class="card">
+              <div class="box">
                   <img src="imagens/js.jpg" alt="JavaScript"/>
-                  <div className="text">JavaScript</div>
+                  <div class="text">JavaScript</div>
               </div>
           </div>
-          <div className="card">
-              <div className="box">
+          <div class="card">
+              <div class="box">
                   <img src="imagens/html.png" alt="html"/>
-                  <div className="text">HTML</div>
+                  <div class="text">HTML</div>
               </div>
           </div>
-          <div className="card">
-              <div className="box">
+          <div class="card">
+              <div class="box">
                   <img src="imagens/sql.jpg" alt="SQL"/>
-                  <div className="text">SQL</div>
+                  <div class="text">SQL</div>
               </div>
           </div>
          </div>
