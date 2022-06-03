@@ -16,18 +16,12 @@ $(document).ready(function(){
      });
   
      var typed = new Typed(".typing", {
-         strings:["Desenvolvedor web", "Freelancer", "Desenhista", "Técnico de Hardware"],
+         strings:["Funcionários Capacitados", "Competentes", "Disciplinados"],
          typeSpeed:100,
          backSpeed:60,
          loop:true
      });
-     var typed = new Typed(".typing-2", {
-        strings:["Desenvolvedor web", "Freelancer", "Desenhista", "Técnico de Hardware"],
-        typeSpeed:100,
-        backSpeed:60,
-        loop:true
-    });
-  
+     
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
@@ -53,3 +47,5 @@ $(document).ready(function(){
         }
     });
   });
+
+  

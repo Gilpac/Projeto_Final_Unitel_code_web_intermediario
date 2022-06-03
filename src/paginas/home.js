@@ -1,4 +1,18 @@
 import React from 'react';
+import { useState } from 'react';
+function MyButton() {
+    const [count, setCount] = useState(0);
+  
+    function handleClick() {
+      setCount(count + 1);
+    }
+  
+    return (
+      <button  type="submit" className="button" onClick={handleClick}>
+        {count} Likes
+      </button>
+    );
+  }
 
 class Home extends React.Component{
     render(){
@@ -13,9 +27,8 @@ class Home extends React.Component{
             <ul class="menu">
               <li><a href="#inicio">Inicio</a></li>
               <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#servicos">Serviços</a></li>
-              <li><a href="#habilidade">Especialidade</a></li>
-              <li><a href="#contactos">Contato</a></li>
+              <li><a href="#services">Aviso</a></li>
+              <li><a href="#teams">Pessoas</a></li>
             </ul>
             <div class="menu-btn">
               <ion-icon name="menu-outline"></ion-icon>
@@ -39,9 +52,10 @@ class Home extends React.Component{
           <h2 className="title">Sobre</h2>
           <div className="about-content">
               <div className="column left">
-                  <img src="../../assets/imagens/sobre.jpg" alt=""/>
+                  <img src="../../sobre.jpg" alt=""/>
               </div>
               <div className="column right">
+              
                   <p>Existimos para que tenham funcionários de excelência em vossa Companinha.
                   Sorte não, pois isso não existe. Existe muito trabalho, força, foco, fé e muita 
                   competência. Todos que pronunciam: "Seja feita a sua vontade, assim na Terra 
@@ -56,153 +70,107 @@ class Home extends React.Component{
       </div>
   </section>
 
-  <section class="teams" id="servicos">
-      <div class="max-width">
-          <h2 class="title">Funcionário Competente só encontras aqui</h2>
-         <div class="carousel owl-carousel ">
-             <div class="card">
-                 <div class="box">
-                     <img src="../../assets/imagens/sobre.jpg" alt="WordPress"/>
-                     <div className="text">WordPress</div>
-                 </div>
-             </div>
-             <div class="card">
-              <div class="box">
-                  <img src="imagens/css3.png" alt="Css"/>
-                  <div class="text">css</div>
-              </div>
-          </div>
-          <div class="card">
-              <div class="box">
-                  <img src="imagens/js.jpg" alt="JavaScript"/>
-                  <div class="text">JavaScript</div>
-              </div>
-          </div>
-          <div class="card">
-              <div class="box">
-                  <img src="imagens/html.png" alt="html"/>
-                  <div class="text">HTML</div>
-              </div>
-          </div>
-          <div class="card">
-              <div class="box">
-                  <img src="imagens/sql.jpg" alt="SQL"/>
-                  <div class="text">SQL</div>
-              </div>
-          </div>
-         </div>
-      </div>
-  </section>
-
-  <section className="skills" id="habilidade">
-    <div className="max-width">
-        <h2 className="title">Outras Especialidades</h2>
-        <div className="skills-content">
-            <div className="column left">
-                <div className="text">Minhas outras Habilidades e Experiências</div>
-                <p>"Uma máquina consegue fazer o trabalho de 50 homens ordinários. Nenhuma máquina consegue fazer o trabalho de um homem extraordinário." - Elbert Hubbard </p>
-                <a href="#">Mais informações</a>
-            </div>
-            <div className="column right">
-               <div className="bars">
-                   <div className="info">
-                       <span>Construct 2</span>
-                       <span>30%</span>
+  <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Aviso Importante</h2>
+            <div class="serv-content">
+               <div class="card">
+                   <div class="box">
+                    <ion-icon name="brush-outline"></ion-icon>
+                    <div class="text">Site em construção</div>
+                    <p>Actualmente este site encontra-se em construção</p>
                    </div>
-                   <div className="line html"></div>
                </div>
-               <div className="bars">
-                <div className="info">
-                    <span>Redes de Computador</span>
-                    <span>50%</span>
+
+               <div class="card">
+                <div class="box">
+                    <ion-icon name="trending-up-outline"></ion-icon>
+                 <div class="text">Anúncios</div>
+                 <p>Todos os dias poderás ver a publicação de pessoas que estão a procura de uma oportunidade de emprego </p>
                 </div>
-                <div className="line css"></div>
             </div>
-            <div className="bars">
-                <div className="info">
-                    <span>Análise de Desenho e Sistema</span>
-                    <span>67%</span>
+
+            <div class="card">
+                <div class="box">
+                    <ion-icon name="code-outline"></ion-icon>
+                 <div class="text">Novidades</div>
+                 <p>Temos muitas novidades para os mostrar. Continue connosco...</p>
                 </div>
-                <div className="line js"></div>
-            </div>
-            <div className="bars">
-                <div className="info">
-                    <span>Base de dados Relacional</span>
-                    <span>70%</span>
-                </div>
-                <div className="line php"></div>
-            </div>
-            <div className="bars">
-                <div className="info">
-                    <span>Computação Gráfica</span>
-                    <span>42%</span>
-                </div>
-                <div className="line mysql"></div>
             </div>
             </div>
         </div>
-    </div>
-</section> 
+    </section>
 
-<section className="contact" id="contactos">
-  <div className="max-width">
-      <h2 className="title">Meus Contactos</h2>
-      <div className="contact-content">
-         <div className="column left">
-             <div className="text">Fale Comigo</div>
-             <p>Sou uma pessoa motivada com muita expectativa profissional. Tenho a experiência, o conhecimento e as habilidades para levá-lo adiante</p>
-         
-         <div className="icons">
-             <div className="row">
-                  <ion-icon name="person-outline"></ion-icon>
-                  <div className="info">
-                      <div className="head">Nome</div>
-                      <div className="sub-title">Gilson Sebastião</div>
-                  </div>
-             </div>
-             <div className="row">
-              <ion-icon className="earth-outline"></ion-icon>
-              <div className="info">
-                  <div className="head">Endereço</div>
-                  <div className="sub-title">Angola - Luanda/Maianga</div>
-              </div>
-         </div>
-         <div className="row">
-          <ion-icon name="person-outline"></ion-icon>
-          <div className="info">
-              <div className="head">Email</div>
-              <div className="sub-title">gilpacsebastiao96@gmail.com</div>
-          </div>
-     </div>
-         </div>
-      </div>
-      <div className="column rigth">
-          <div className="text">Mensagem</div>
-          <form action="#">
-              <div className="fields">
-                  <div className="field name">
-                      <input type="text" placeholder="Nome" required/>
-                  </div>
-                  <div className="field email">
-                      <input type="email" placeholder="Email" required/>
-                  </div>
-              </div>
-              <div className="field">
-                  <div className="field">
-                      <input type="text" placeholder="Sobrenome" required/>
-                  </div>
-                  <div className="field textarea">
-                     <textarea  cols="30" rows="10" placeholder="Escrever...." required></textarea>
-                  </div>
-                  <div className="button">
-                      <button type="submit">Enviar</button>
-                  </div>
-              </div>
-          </form>
-      </div>
-      </div>
-  </div>
-</section>
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">Encontre aqui o seu Funcionário.</h2>
+           <div class="carousel owl-carousel ">
+               <div class="card">
+                   <div class="box">
+                       <img src="../../alfa.jpg" alt="Alfa" />
+                       <div class="text">Ester Sebastião</div>
+                       <p>- Licenciada em Psicologia do Trabalho. <br/> - Experiência na área: 3 anos.<br/>
+                        - Estado: Trabalhando. <br/>
+                        - Gmail: ester@gmail.com <br/>
+                        - Telefone: 928 499 244.
+                       </p>
+
+                       <MyButton />
+                   </div>
+               </div>
+               <div class="card">
+                <div class="box">
+                    <img src="../../nayol.jpg" alt="nayol"/>
+                    <div class="text">Zélia Salvador</div>
+                    <p>- Ensino Médio Concluido. <br/> - Curso: Construção Civil.<br/>
+                        - Estado: Trabalhando. <br/>
+                        - Gmail: ester@gmail.com <br/>
+                        - Telefone: 928 499 244.</p>
+                        <MyButton />
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="../../mama.jpg" alt=" Mama"/>
+                    <div class="text">Mirokua Leitão</div>
+                    <p>- Estudante. <br/> - Curso: Mecatronica.<br/>
+                        - Estado: Trabalhando por conta própria. <br/>
+                        - Gmail: ester@gmail.com <br/>
+                        - Telefone: 928 499 244.
+                        </p>
+                        <MyButton />
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="../../marcio.jpg" alt=""/>
+                    <div class="text">Márcio da Fonseca</div>
+                    <p>
+                    - Estudante. <br/> - Curso: Ciências da Computação.<br/>
+                        - Profissão: Designer Gráfico. <br/>
+                        - Gmail: ester@gmail.com <br/>
+                        - Telefone: 928 499 244.
+                    </p>
+                    <MyButton />
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="../../genio.jpg" alt=""/>
+                    <div className="text">Eduardo Genio</div>
+                    <p> - Estudante. <br/> - Curso: Ciências da Computação.<br/>
+                        - Profissão: Designer Gráfico. <br/>
+                        - Gmail: ester@gmail.com <br/>
+                        - Telefone: 928 499 244.</p>
+                        <MyButton />
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+
+
+  
 
 
 <footer>
